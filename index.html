@@ -8,7 +8,7 @@
     <title>To Do List</title>
   </head>
     <body>
-      <div ng-controller="FormController as td">
+      <div id="livearea" ng-controller="FormController as td">
         <span id="headline">TODO List</span>
         <br>
         <span>A place to store the things you have to do!</span>
@@ -23,6 +23,7 @@
           </ol>
           <input type="text" placeholder="Add your to-do" ng-model="task">
           <button id="addButton" ng-click="td.addToDo(task)">Add</button>
+          <!-- .updateValue('') -->
         </form>
       </div>
     </body>

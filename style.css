@@ -24,7 +24,7 @@ input {
 #removeButton {
   border: none;
   position: absolute;
-  right: 100px;
+  right: 10px;
   margin: 0;
 }
 
@@ -52,4 +52,8 @@ color: #bbb;
 
 li:hover {
   background-color: #eee;
+}
+
+#livearea {
+  position: relative;
 }
