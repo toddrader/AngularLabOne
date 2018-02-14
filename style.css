@@ -2,6 +2,7 @@ html{
   background-color: #ff1493;
   font-family: 'Open Sans', sans-serif;
   Font-weight: 300;
+  font-size: 14px;
   background: linear-gradient(to right, #f857a6, #ff5858);
 }
 body{
@@ -22,10 +23,14 @@ input {
 }
 #removeButton {
   border: none;
-  float: right;
-  margin-right: 10px;
+  position: absolute;
+  right: 100px;
+  margin: 0;
 }
 
+#removeButton: hover {
+  color: #ff0000;
+}
 #addButton {
   background-color: #ff69b4;
   color: white;
@@ -33,7 +38,18 @@ input {
   height: 30px;
   margin-top: 10px;
 }
+#addButton:hover{
+  background-color: #ff1493;
+}
 
+::placeholder {
+color: #bbb;
+
+}
 #headline {
   font-size: 30px;
+}
+
+li:hover {
+  background-color: #eee;
 }

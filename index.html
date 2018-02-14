@@ -15,18 +15,15 @@
         <form>
           <input type="text" placeholder="Filter your to-dos" ng-model="filterTask">
         </form>
-        <!-- <form ng-sumbit="td.addToDo(task)"> -->
+        <form ng-sumbit="td.addToDo(task)">
           <ol>
             <li ng-repeat="task in td.todoList | filter: filterTask">{{ task }}
-              <!-- <a ng-click="form.removeItem($index) href= -->
-              <button id="removeButton" ng-click="td.removeToDo();">X</button>
-              <!-- <i class="material-icons close" ng-click="form.removeItem($index)">close</i> -->
+              <span flex></span><i id="removeButton" class="material-icons close" ng-click="td.removeToDo($index)">close</i>
             </li>
           </ol>
           <input type="text" placeholder="Add your to-do" ng-model="task">
-          <!-- <button id="addButton" type="submit">Add</button> -->
           <button id="addButton" ng-click="td.addToDo(task)">Add</button>
-        <!-- </form> -->
+        </form>
       </div>
     </body>
 </html>
